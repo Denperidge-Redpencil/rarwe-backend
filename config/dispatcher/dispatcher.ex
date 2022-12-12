@@ -9,6 +9,10 @@ defmodule Dispatcher do
   @json %{ accept: %{ json: true } }
   @html %{ accept: %{ html: true } }
 
+  match "/api/*path", @json do
+    forward conn, path, "http://resource/"
+  end
+
   # In order to forward the 'themes' resource to the
   # resource service, use the following forward rule:
   #
