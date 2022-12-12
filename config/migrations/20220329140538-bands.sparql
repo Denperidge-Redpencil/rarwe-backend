@@ -1,0 +1,24 @@
+PREFIX bands: <http://mu.semte.ch/vocabularies/ext/bands/>
+PREFIX albums: <http://mu.semte.ch/vocabularies/ext/albums/>
+PREFIX songs: <http://mu.semte.ch/vocabularies/ext/songs/>
+PREFIX ext: <http://mu.semte.ch/vocabularies/ext/>
+PREFIX mu: <http://mu.semte.ch/vocabularies/core/>
+
+INSERT DATA {
+  GRAPH <http://mu.semte.ch/graphs/public> {
+    bands:metallica
+      a ext:Band;
+      ext:name "Metallica";
+      ext:hasAlbum albums:masterOfPuppets, albums:garageInc;
+      mu:uuid "ae0987ea98ea09870e980e9a0".
+    albums:masterOfPuppets
+      a ext:Album;
+      ext:title "Master of Puppets";
+      ext:hasSong songs:Battery, songs:MasterOfPuppets";
+      mu:uuid "745ea47ea64587ea".
+    songs:Battery
+        a ext:Song;
+        ext:title "Battery";
+        mu:uuid "5643aoe7645a74aoe654".
+  }
+}
