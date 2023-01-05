@@ -14,13 +14,13 @@ INSERT DATA {
     bands:kayaproject a ext:Band;
       bands:name "Kaya Project";
       mu:uuid "kaya-project";
-      ext:hasSong songs:alwayswaiting.
+      ext:hasBand songs:alwayswaiting.
 
 
     bands:ledzeppelin a ext:Band;
       bands:name "Led Zeppelin";
       mu:uuid "led-zeppelin";
-      ext:hasSong songs:blackdog,
+      ext:hasBand songs:blackdog,
                songs:achilleslaststand,
                songs:immigrantsong,
                songs:wholelottalove.
@@ -29,7 +29,7 @@ INSERT DATA {
       bands:name "Pearl Jam";
       bands:description "Pearl Jam is an American rock band, formed in Seattle, Washington in 1990.";
       mu:uuid "pearl-jam";
-      ext:hasSong songs:yellowledbetter,
+      ext:hasBand songs:yellowledbetter,
                songs:daughter,
                songs:animal,
                songs:stateofloveandtrust,
@@ -42,7 +42,7 @@ INSERT DATA {
     bands:foofighters a ext:Band;
       bands:name "Foo Fighters";
       mu:uuid "foo-fighters";
-      ext:hasSong songs:thepretender,
+      ext:hasBand songs:thepretender,
                songs:bestofyou.
 
     bands:redhotchilipeppers a ext:Band;
@@ -137,7 +137,7 @@ INSERT DATA {
     # albums:masterOfPuppets
     #   a ext:Album;
     #   ext:title "Master of Puppets";
-    #   ext:hasSong songs:Battery, songs:MasterOfPuppets";
+    #   ext:hasBand songs:Battery, songs:MasterOfPuppets";
     #   mu:uuid "745ea47ea64587ea".
     # songs:Battery
     #     a ext:Song;
