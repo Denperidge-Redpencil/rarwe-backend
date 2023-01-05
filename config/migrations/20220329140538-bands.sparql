@@ -15,16 +15,43 @@ INSERT DATA {
     bands:ledzeppelin a ext:Band;
       bands:name "Led Zeppelin";
       mu:uuid "ce0987ea98ea09870e980e9a0".
-    bands:kayaproject a ext:Band;
+    bands:pearljam a ext:Band;
       bands:name "Pearl Jam";
       bands:description "Pearl Jam is an American rock band, formed in Seattle, Washington in 1990.";
-      mu:uuid "de0987ea98ea09870e980e9a0".
+      mu:uuid "pearljam".
     bands:radiohead a ext:Band;
       bands:name "Radiohead";
       mu:uuid "ee0987ea98ea09870e980e9a0".
+
+    
+    songs:yellowledbetter a ext:Song;
+      songs:title "Yellow Ledbetter";
+      songs:rating 5;
+      mu:uuid "323";
+      songs:hasBand bands:pearljam .
+      
+      
+    songs:redledbetter a ext:Song;
+      songs:title "Red Ledbetter";
+      songs:rating 5;
+      mu:uuid "324"; 
+      ext:hasBand bands:pearljam .
+    
+    songs:redledbetter a ext:Song;
+      songs:title "Green Ledbetter";
+      songs:rating 5;
+      mu:uuid "325"; 
+      ext:Band bands:pearljam .
+
+    songs:magentaledbetter a ext:Song;
+      songs:title "Magenta Ledbetter";
+      songs:rating 5;
+      mu:uuid "326" .
+
     bands:redhotchilipeppers a ext:Band;
       bands:name "Red Hot Chili Peppers";
-      mu:uuid "fe0987ea98ea09870e980e9a0".
+      mu:uuid "fe0987ea98ea09870e980e9a0";
+      ext:Song songs:magentaledbetter.
 
       #ext:hasAlbum albums:masterOfPuppets, albums:garageInc;
       #mu:uuid "ae0987ea98ea09870e980e9a0".

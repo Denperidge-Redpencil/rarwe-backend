@@ -39,3 +39,5 @@ services:
      - database:database
     volumes:
       - ./config/migrations:/data/migrations
+    depends_on: 
+      - database
