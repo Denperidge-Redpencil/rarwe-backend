@@ -21,7 +21,7 @@
 
 (define-resource song ()
     :class (s-prefix "ext:Song")
-    :properties `((:title :string ,(s-prefix "songs:name"))
+    :properties `((:title :string ,(s-prefix "songs:title"))
                   (:rating :integer ,(s-prefix "songs:rating"))
                  )
     :has-one `((band :via ,(s-prefix "ext:Band")

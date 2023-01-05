@@ -8,51 +8,71 @@ INSERT DATA {
   GRAPH <http://mu.semte.ch/application> {
     bands:metallica a ext:Band;
       bands:name "Metallica";
-      mu:uuid "ae0987ea98ea09870e980e9a0".
+      mu:uuid "metallica".
+
     bands:kayaproject a ext:Band;
       bands:name "Kaya Project";
-      mu:uuid "be0987ea98ea09870e980e9a0".
+      mu:uuid "kaya-project".
+
     bands:ledzeppelin a ext:Band;
       bands:name "Led Zeppelin";
-      mu:uuid "ce0987ea98ea09870e980e9a0".
+      mu:uuid "led-zeppelin".
+
     bands:pearljam a ext:Band;
       bands:name "Pearl Jam";
       bands:description "Pearl Jam is an American rock band, formed in Seattle, Washington in 1990.";
-      mu:uuid "pearljam".
+      mu:uuid "pearl-jam";
+      ext:Song songs:daughter,
+               songs:animal,
+               songs:stateofloveandtrust,
+               songs:alive.
+
     bands:radiohead a ext:Band;
       bands:name "Radiohead";
-      mu:uuid "ee0987ea98ea09870e980e9a0".
+      mu:uuid "radiohead".
 
-    
+    bands:redhotchilipeppers a ext:Band;
+      bands:name "Red Hot Chili Peppers";
+      mu:uuid "red-hot-chili-peppers";
+      ext:Song songs:yellowledbetter.
+
+
     songs:yellowledbetter a ext:Song;
       songs:title "Yellow Ledbetter";
       songs:rating 5;
       mu:uuid "323";
-      songs:hasBand bands:pearljam .
-      
-      
-    songs:redledbetter a ext:Song;
-      songs:title "Red Ledbetter";
-      songs:rating 5;
-      mu:uuid "324"; 
-      ext:hasBand bands:pearljam .
-    
-    songs:redledbetter a ext:Song;
-      songs:title "Green Ledbetter";
-      songs:rating 5;
-      mu:uuid "325"; 
-      ext:Band bands:pearljam .
-
-    songs:magentaledbetter a ext:Song;
-      songs:title "Magenta Ledbetter";
-      songs:rating 5;
-      mu:uuid "326";
       ext:Band bands:redhotchilipeppers.
 
-    bands:redhotchilipeppers a ext:Band;
-      bands:name "Red Hot Chili Peppers";
-      mu:uuid "fe0987ea98ea09870e980e9a0";
-      ext:Song songs:magentaledbetter.
+    songs:daughter a ext:Song;
+      songs:title "Daughter";
+      songs:rating 5;
+      mu:uuid "324";
+      ext:Band bands:pearljam.
+    
+    songs:animal a ext:Song;
+      songs:title "Animal";
+      songs:rating 4;
+      mu:uuid "325";
+      ext:Band bands:pearljam.
+    
+    songs:stateofloveandtrust a ext:Song;
+      songs:title "State of Love and Trust";
+      songs:rating 4;
+      mu:uuid "326";
+      ext:Band bands:pearljam.
+    
+    songs:alive a ext:Song;
+      songs:title "Alive";
+      songs:rating 3;
+      mu:uuid "327";
+      ext:Band bands:pearljam.
+    
+    songs:insidejob a ext:Song;
+      songs:title "Inside Job";
+      songs:rating 4;
+      mu:uid "328";
+      ext:Band bands:pearljam.
+
 
       #ext:hasAlbum albums:masterOfPuppets, albums:garageInc;
       #mu:uuid "ae0987ea98ea09870e980e9a0".
