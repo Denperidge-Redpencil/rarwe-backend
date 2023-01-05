@@ -83,25 +83,25 @@ INSERT DATA {
     songs:insidejob a ext:Song;
       songs:title "Inside Job";
       songs:rating 4;
-      mu:uid "328";
+      mu:uuid "328";
       ext:Band bands:pearljam.
     
     songs:blackdog a ext:Song;
       songs:title "Black Dog";
       songs:rating 4;
-      mu:uid "329";
+      mu:uuid "329";
       ext:Band bands:ledzeppelin.
     
     songs:achilleslaststand a ext:Song;
       songs:title "Achilles Last Stand";
       songs:rating 5;
-      mu:uid "330";
+      mu:uuid "330";
       ext:Band bands:ledzeppelin.
     
     songs:immigrantsong a ext:Song;
       songs:title "Immigrant Song";
       songs:rating 4;
-      mu:uid "331";
+      mu:uuid "331";
       ext:Band bands:ledzeppelin.
     
     songs:wholelottalove a ext:Song;
