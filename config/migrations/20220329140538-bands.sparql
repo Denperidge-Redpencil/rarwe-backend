@@ -5,20 +5,27 @@ PREFIX ext: <http://mu.semte.ch/vocabularies/ext/>
 PREFIX mu: <http://mu.semte.ch/vocabularies/core/>
 
 INSERT DATA {
-  GRAPH <http://mu.semte.ch/graphs/public> {
+  GRAPH <http://mu.semte.ch/application> {
     bands:metallica a ext:Band;
-      bands:name "Metallica".
+      bands:name "Metallica";
+      mu:uuid "ae0987ea98ea09870e980e9a0".
     bands:kayaproject a ext:Band;
-      bands:name "Kaya Project".
+      bands:name "Kaya Project";
+      mu:uuid "be0987ea98ea09870e980e9a0".
     bands:ledzeppelin a ext:Band;
-      bands:name "Led Zeppelin".
+      bands:name "Led Zeppelin";
+      mu:uuid "ce0987ea98ea09870e980e9a0".
     bands:kayaproject a ext:Band;
       bands:name "Pearl Jam";
-      bands:description "Pearl Jam is an American rock band, formed in Seattle, Washington in 1990.".
+      bands:description "Pearl Jam is an American rock band, formed in Seattle, Washington in 1990.";
+      mu:uuid "de0987ea98ea09870e980e9a0".
     bands:radiohead a ext:Band;
-      bands:name "Radiohead".
+      bands:name "Radiohead";
+      mu:uuid "ee0987ea98ea09870e980e9a0".
     bands:redhotchilipeppers a ext:Band;
-      bands:name "Red Hot Chili Peppers".
+      bands:name "Red Hot Chili Peppers";
+      mu:uuid "fe0987ea98ea09870e980e9a0".
+
       #ext:hasAlbum albums:masterOfPuppets, albums:garageInc;
       #mu:uuid "ae0987ea98ea09870e980e9a0".
     # albums:masterOfPuppets
