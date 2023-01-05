@@ -10,19 +10,27 @@ INSERT DATA {
       bands:name "Metallica";
       mu:uuid "metallica".
 
+
     bands:kayaproject a ext:Band;
       bands:name "Kaya Project";
-      mu:uuid "kaya-project".
+      mu:uuid "kaya-project";
+      ext:Song songs:alwayswaiting.
+
 
     bands:ledzeppelin a ext:Band;
       bands:name "Led Zeppelin";
-      mu:uuid "led-zeppelin".
+      mu:uuid "led-zeppelin";
+      ext:Song songs:blackdog,
+               songs:achilleslaststand,
+               songs:immigrantsong,
+               songs:wholelottalove.
 
     bands:pearljam a ext:Band;
       bands:name "Pearl Jam";
       bands:description "Pearl Jam is an American rock band, formed in Seattle, Washington in 1990.";
       mu:uuid "pearl-jam";
-      ext:Song songs:daughter,
+      ext:Song songs:yellowledbetter,
+               songs:daughter,
                songs:animal,
                songs:stateofloveandtrust,
                songs:alive.
@@ -31,17 +39,22 @@ INSERT DATA {
       bands:name "Radiohead";
       mu:uuid "radiohead".
 
+    bands:foofighters a ext:Band;
+      bands:name "Foo Fighters";
+      mu:uuid "foo-fighters";
+      ext:Song songs:thepretender,
+               songs:bestofyou.
+
     bands:redhotchilipeppers a ext:Band;
       bands:name "Red Hot Chili Peppers";
-      mu:uuid "red-hot-chili-peppers";
-      ext:Song songs:yellowledbetter.
+      mu:uuid "red-hot-chili-peppers".
 
 
     songs:yellowledbetter a ext:Song;
       songs:title "Yellow Ledbetter";
       songs:rating 5;
       mu:uuid "323";
-      ext:Band bands:redhotchilipeppers.
+      ext:Band bands:pearljam.
 
     songs:daughter a ext:Song;
       songs:title "Daughter";
@@ -72,6 +85,51 @@ INSERT DATA {
       songs:rating 4;
       mu:uid "328";
       ext:Band bands:pearljam.
+    
+    songs:blackdog a ext:Song;
+      songs:title "Black Dog";
+      songs:rating 4;
+      mu:uid "329";
+      ext:Band bands:ledzeppelin.
+    
+    songs:achilleslaststand a ext:Song;
+      songs:title "Achilles Last Stand";
+      songs:rating 5;
+      mu:uid "330";
+      ext:Band bands:ledzeppelin.
+    
+    songs:immigrantsong a ext:Song;
+      songs:title "Immigrant Song";
+      songs:rating 4;
+      mu:uid "331";
+      ext:Band bands:ledzeppelin.
+    
+    songs:wholelottalove a ext:Song;
+      songs:title "Whole Lotta Love";
+      songs:rating 4;
+      mu:uuid "332";
+      ext:Band bands:ledzeppelin.
+    
+    songs:alwayswaiting a ext:Song;
+      songs:title "Always Waiting";
+      songs:rating 5;
+      mu:uuid "333";
+      ext:Band bands:kayaproject.
+
+    songs:thepretender a ext:Song;
+      songs:title "The Pretender";
+      songs:rating 3;
+      mu:uuid "334";
+      ext:Band bands:foofighters.
+    
+    songs:bestofyou a ext:Song;
+      songs:title "Best of You";
+      songs:rating 5;
+      mu:uuid "335";
+      ext:Band bands:foofighters.
+    
+    
+    
 
 
       #ext:hasAlbum albums:masterOfPuppets, albums:garageInc;
