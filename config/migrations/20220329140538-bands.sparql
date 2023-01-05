@@ -46,7 +46,8 @@ INSERT DATA {
     songs:magentaledbetter a ext:Song;
       songs:title "Magenta Ledbetter";
       songs:rating 5;
-      mu:uuid "326" .
+      mu:uuid "326";
+      ext:Band bands:redhotchilipeppers.
 
     bands:redhotchilipeppers a ext:Band;
       bands:name "Red Hot Chili Peppers";

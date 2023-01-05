@@ -25,7 +25,6 @@
                   (:rating :integer ,(s-prefix "songs:rating"))
                  )
     :has-one `((band :via ,(s-prefix "ext:Band")
-               :inverse t
                :as "band"))
     :resource-base (s-url "http://mu.semte.ch/vocabularies/ext/songs/")
     :on-path "songs"
