@@ -3,19 +3,5 @@
   "prefixes": {
   },
   "resources": {
-
-    "bands": {
-      "name": "band",
-      "attributes": {
-        "id": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-
-      }
-    }
-
   }
 }

@@ -9,7 +9,7 @@ defmodule Dispatcher do
   @json %{ accept: %{ json: true } }
   @html %{ accept: %{ html: true } }
 
-  match "/api/*path", @json do
+  match "/*path", @json do
     forward conn, path, "http://resource/"
   end
 
