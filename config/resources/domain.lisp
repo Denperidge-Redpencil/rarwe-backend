@@ -13,7 +13,7 @@
     :properties `((:name :string ,(s-prefix "bands:name"))
                   (:description :string ,(s-prefix "bands:description"))
                  )
-    :has-many `((song :via ,(s-prefix "ext:Song")
+    :has-many `((song :via ,(s-prefix "ext:hasSong")
                :as "songs"))
     :resource-base (s-url "http://mu.semte.ch/vocabularies/ext/bands/")
     :on-path "bands"
@@ -24,7 +24,8 @@
     :properties `((:title :string ,(s-prefix "songs:title"))
                   (:rating :integer ,(s-prefix "songs:rating"))
                  )
-    :has-one `((band :via ,(s-prefix "ext:Band")
+    :has-one `((band :via ,(s-prefix "ext:hasBand")
+               :inverse t
                :as "band"))
     :resource-base (s-url "http://mu.semte.ch/vocabularies/ext/songs/")
     :on-path "songs"
